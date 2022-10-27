@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaniaZarka/Tailwind-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaniaZarka/Tailwind-Portfolio/issues"
+  },
+  "homepage": "https://github.com/RaniaZarka/Tailwind-Portfolio#readme"
+}
