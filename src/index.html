@@ -10,7 +10,7 @@
 </head>
 <body >
  
-  <div class="w-full h-full"
+  <div class="w-full h-auto"
   style="background-image: url('./images/backgroud.png');"> 
 
    <!-- Tailwind Navbar-->
@@ -19,7 +19,7 @@
     <div class=" px-2 container ">
      <div class="flex"> 
       
-     <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-20 bg-transparent z-50
+     <ul id="menu" class="hidden fixed top-0 right-0 px-14 py-6 bg-transparent z-50
      md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 ">
 
      <li class="md:hidden z-90 fixed top-4 right-6">
@@ -53,7 +53,7 @@
   </nav>
   </header>
   <!-- Home section -->
-  <div  id="home" >
+  <section  id="home" >
    <div class=" grid  grid-rows-2 grid-cols-1  "> 
  <div>  
   <h1 class="name text-white pt-36 pl-16 text-start text-8xl"> Rania Zarka </h1> 
@@ -63,20 +63,20 @@
  </div>
   </div>
   
-</div>
+</section>
 <!--About section -->
-  <section id="about" class="bg-slate-800 w-full h-screen " >
+  <section id="about" class=" bg-zinc-800 w-full h-screen " >
    
-    <div class=" grid grid-cols-2 pt-40">
-      <div class=" object-left">
-        <img class=" me-image" src="./images/ME.png">
+    <div class="  grid grid-cols-2 pt-40 ">
+      <div class=" flex flex-row justify-end">
+        <img class=" me-image  " src="./images/ME.png">
       </div>
-      <div class="pl-10"> 
+      <div class="pl-10 pt-8"> 
         <p class="text-white text pb-5"> 
           I'm Rania, a computer science graduate,<br>
           and currently studying web development.
         </p>
-        <p class="text-white text d-none d-md-block pb-5"> 
+        <p class="text-white text pb-5 hidden lg:block"> 
           I previously worked in a different field,<br>
            but I have always been passionate about programming.<br>
             This is why I chose to major in computer science,<br>
@@ -84,8 +84,8 @@
              in web development. I knew I made the proper decision <br>
              since I genuinely enjoy the work I am doing in school. 
         </p>
-        <p class="text-white text d-md-none"> 
-         I pursued studies in web development. I knew I made the proper decision <br>
+        <p class="text-white text  pb-5 lg:hidden"> 
+         I pursued studies in web development. I knew I made the proper decision 
              since I genuinely enjoy the work I am doing in school. 
         </p>
         <p class="text-white text"> 
@@ -96,19 +96,169 @@
     </div>
   </section>
   <!--Skills section -->
-  <section id="skills" class="bg-cyan-600 w-full h-screen" >
+  <section id="skills" class="bg-zinc-800 w-full h-screen" >
     <div class="conatiner mx-auto "> 
-    <h5 class="text-center pt-10" >My Qualification </h5>
+    <h5 class=" text-white text-center pt-10 text-xl" >My Qualification </h5>
     <div class="grid grid-cols-3 pt-10">
-    <div></div>
-    <div></div>
-    <div></div>
+      <!--Education-->
+    <div class="pl-20 pt-8 ">
+      <div class=" flex flex-row "> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-mortarboard-fill hidden lg:block" viewBox="0 0 16 16">
+        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+       </svg>   
+       <p class="text-white text-2xl hidden lg:block pl-3"> Education </p>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-mortarboard-fill lg:hidden" viewBox="0 0 16 16">
+        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+       </svg>  
+       <p class="text-white lg:hidden text-lg  pl-2 "> Education </p>
+      </div>
+      <div class="skills-margin"> 
+      <h5 class="text-white text-xl pt-6  hidden lg:block"> Web Development </h5>
+      <h6 class="text-white text-sm font-semibold lg:hidden pt-6"> Web Development </h6>
+      <p class="text-white text-sm hidden lg:block"> Feb 2022 - June 2023</p>
+      <p class="text-white  lg:hidden text-xs">  June 2023</p>
     </div>
-    </div> 
+    <div  class="skills-margin"> 
+      <h5 class="text-white text-xl pt-6 hidden lg:block">Computer Science </h5>
+      <h6 class="text-white text-sm font-semibold lg:hidden pt-6">Computer Science </h6>
+      <p class="text-white text-sm hidden lg:block ">Sept 2019 - Jan 2022</p>
+      <p class="text-white  text-xs lg:hidden">Jan 2022</p>
+    </div>
+    </div>
+  
+  <!--Skills-->
+    <div class="pt-8 pl-8">
+      <div class=" flex flex-row "> 
+       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-pencil-square hidden lg:block" viewBox="0 0 16 16">
+        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+      </svg>
+      <p class="text-white text-2xl hidden lg:block pl-3">Technical Skills</p> 
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-pencil-square lg:hidden" viewBox="0 0 16 16">
+        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+      </svg>
+      <p class="text-white text-lg lg:hidden pl-2">Skills</p> 
+      </div>
+   
+    <div class="skills-margin pt-6 text-sm"> 
+    <p class="pb-3 skills text-white">React.JS Library </p> 
+    <p class="pb-3 skills text-white">Redux State Management </p> 
+    <p class="pb-3 skills text-white"> Object Oriented PHP</p> 
+    <p class="pb-3 skills text-white">Node Express RETful JSON API </p> 
+    <p class="pb-3 skills text-white">ASP .net/core </p> 
+    <p class="pb-3 skills text-white"> JavaScript </p> 
+    <p class="pb-3 skills text-white"> TypeScript</p> 
+    <p class="pb-3 skills text-white"> Bootstrap styling</p> 
+    <p class="pb-3 skills text-white"> Tailwind styling</p> 
+    <p class="pb-3 skills text-white">C# language  </p> 
+  </div>
+   
+    </div>
+ <!--Experience-->
+    <div class="pt-8 pl-8">
+      <div class=" flex flex-row "> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-briefcase-fill hidden lg:block" viewBox="0 0 16 16">
+        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+        <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+      </svg> 
+      <p class="text-white text-2xl hidden lg:block pl-3 ">Experience</p>
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-briefcase-fill lg:hidden" viewBox="0 0 16 16">
+        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+        <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+      </svg> 
+      <p class="text-white text-lg lg:hidden pl-2">Experience</p>
+      </div>
+     <!-- Lemonade project-->
+      <div class="pt-6"> 
+        <h5 class="text-white hidden text-lg lg:block"> Lemonade web app </h5>
+        <h6 class="text-white text-sm font-semibold lg:hidden"> Lemonade web app </h6>
+        <p class="text-white text-sm">React, Redux, JavaScript</p>
+        <!-- Github link-->
+        <a href="https://github.com/RaniaZarka/lemonade-store" target="_blank" rel="noopener noreferrer" type="button" class=" text-white hidden lg:block"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg> Github
+        </a>  
+        <a href="https://github.com/RaniaZarka/lemonade-store" target="_blank" rel="noopener noreferrer" type="button" class=" text-white lg:hidden"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg> 
+        </a> 
+        <!-- Youtube link-->
+        <a href="https://www.youtube.com/watch?v=8rXTBIXOcWk&ab_channel=RaniaZarka" target="_blank" rel="noopener noreferrer" type="button" class=" text-white hidden lg:block
+        "> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>YouTube
+        </a>
+        <a href="https://www.youtube.com/watch?v=8rXTBIXOcWk&ab_channel=RaniaZarka" target="_blank" rel="noopener noreferrer" type="button" class=" text-white lg:hidden"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>
+        </a>
+       
+      </div>
+   <!-- Climate right-->   
+      <div class="pt-6 "> 
+        <h5 class="text-white text-lg hidden lg:block"> Climate right web app </h5>
+        <h6 class="text-white text-sm font-semibold lg:hidden "> Climate right web app </h6>
+        <p class="text-white text-sm">Angular 2, ionic 5, TypeScript, MySQL, ASP.NET Core</p>
+        <!-- github link-->
+        <a href="https://github.com/RaniaZarka/Climate_Right" target="_blank" rel="noopener noreferrer" type="button" class=" text-white hidden lg:block"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-github hidden lg:block" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg> Github
+        </a>  
+        <a href="https://github.com/RaniaZarka/Climate_Right" target="_blank" rel="noopener noreferrer" type="button" class=" text-white lg:hidden"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-github lg:hidden" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg> 
+        </a>  
+        <!-- Youtube link-->
+        <a href="https://www.youtube.com/watch?v=gSbM-fNdJSk&ab_channel=RaniaZarka" target="_blank" rel="noopener noreferrer" type="button" class=" text-white hidden lg:block "> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-youtube hidden lg:block" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>YouTube
+        </a>
+        <a href="https://www.youtube.com/watch?v=gSbM-fNdJSk&ab_channel=RaniaZarka" target="_blank" rel="noopener noreferrer" type="button" class=" text-white lg:hidden "> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-youtube lg:hidden" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+          </svg>
+        </a>
+        <!--Website link-->
+        <a href="https://climate-right-438e8.web.app/home" target="_blank" rel="noopener noreferrer" type="button" class=" text-white hidden lg:block"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-link hidden lg:block" viewBox="0 0 16 16">
+          <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+          <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+        </svg> Website 
+        </a>
+        <a href="https://climate-right-438e8.web.app/home" target="_blank" rel="noopener noreferrer" type="button" class=" text-white lg:hidden"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-link lg:hidden" viewBox="0 0 16 16">
+            <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+            <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+          </svg> 
+          </a>
+       
+      </div >
+      <div  class="pt-6 " > 
+        <h5 class="text-white text-lg hidden lg:block ">Coro-lab internship </h5>
+        <h6 class="text-white  text-sm font-semibold lg:hidden">Coro-lab internship </h6>
+        <p class="text-white text-sm"> Android developer Sept - Nov 2021</p>
+        
+      </div>
+    </div>
+  </div> 
+
+    </div>
+   
   </section>
 
   <!--Contact section -->
-  <section id="contact" class="bg-red-600 w-full h-screen" >
+  <section id="contact" class="bg-zinc-800 w-full h-screen" >
     <div class="conatiner mx-auto ">    
       <p class="text-white text-center pt-64 text-3xl"> <b>Email:</b> RaniaZarka@hotmail.com</p>
       <p class="text-white text-center pt-8 text-3xl"> <b>Phone number: </b> +45 28781210</p>   
@@ -131,6 +281,7 @@
       </p>      
        </div>
   </section>
+  </div>
 
 <script src="./main.js"></script>
 <script>
